@@ -5,6 +5,7 @@
 #ifndef PROJ_ANDROID_GAMESCENE_H
 #define PROJ_ANDROID_GAMESCENE_H
 
+#include <cocos/deprecated/CCDeprecated.h>
 #include "cocos2d.h"
 namespace PlatformerGame {
     class GameScene : public cocos2d::Scene {
@@ -14,6 +15,11 @@ namespace PlatformerGame {
         virtual bool init();
 
         CREATE_FUNC(GameScene);
+    private:
+
+        cocos2d::TMXTiledMap *tileMap;
+
+        void setViewPointCenter(cocos2d::CCPoint position);
     };
 }
 

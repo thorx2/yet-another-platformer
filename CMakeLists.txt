@@ -54,6 +54,7 @@ list(APPEND GAME_SOURCE
         Classes/GenericClasses/BaseActor.cpp
         Classes/Scenes/GameScene.cpp
         Classes/Scenes/MainScene.cpp
+        Classes/UIComponents/OnScreenController.cpp
      )
 list(APPEND GAME_HEADER
         Classes/AppDelegate.h
@@ -62,6 +63,7 @@ list(APPEND GAME_HEADER
         Classes/GenericClasses/BaseActor.h
         Classes/Scenes/MainScene.h
         Classes/Scenes/GameScene.h
+        Classes/UIComponents/OnScreenController.h
      )
 
 if(ANDROID)

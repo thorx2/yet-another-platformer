@@ -8,9 +8,21 @@
 
 namespace PlatformerGame {
 
+    enum UIButton {
+        eLeftMove,
+        eRightMove,
+        eAttack,
+        eJump,
+        eInGameMenu
+    };
+
     class GameManager {
     public:
         static GameManager* GetInstance();
+
+        void OnInteractionReceived(UIButton buttonHit);
+
+        void OnInteractionStopped(UIButton buttonHit);
 
     private:
         GameManager();
