@@ -23,6 +23,7 @@
  ****************************************************************************/
 
 #include <Scenes/MainScene.h>
+#include <Scenes/GameScene.h>
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 
@@ -100,7 +101,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = PlatformerGame::MainScene::createScene();
+    auto scene = PlatformerGame::GameScene::createScene();
 
     // run
     director->runWithScene(scene);

@@ -42,8 +42,8 @@ namespace PlatformerGame {
 
         Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-        spritecache->addSpriteFramesWithFile("tpassets/UIAndControls/controlls.plist",
-                                             "tpassets/UIAndControls/controlls.png");
+        spritecache->addSpriteFramesWithFile("tpassets/uiandcontrolls/controlls.plist",
+                                             "tpassets/uiandcontrolls/controlls.png");
 
         leftButton = Sprite::createWithSpriteFrameName("MobileButtons/Buttons/3.png");
         rightButton = Sprite::createWithSpriteFrameName("MobileButtons/Buttons/4.png");
