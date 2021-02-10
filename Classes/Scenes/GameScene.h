@@ -7,6 +7,8 @@
 
 #include "cocos2d.h"
 #include <Box2D/Box2D.h>
+#include <cocos/base/CCValue.h>
+#include <GenericClasses/BaseActor.h>
 
 namespace PlatformerGame {
     class GameScene : public cocos2d::Scene, b2ContactListener {
@@ -15,12 +17,20 @@ namespace PlatformerGame {
 
         virtual bool init();
 
+        virtual void draw(cocos2d::Renderer renderer, const cocos2d::Mat4 &transform, uint32_t flags);
+
         CREATE_FUNC(GameScene);
     private:
 
-        cocos2d::TMXTiledMap *tileMap;
+        int m_objectCount = 0;
 
-        b2World* world;
+        cocos2d::TMXTiledMap *m_tileMap;
+
+        b2World* m_world;
+
+        double currentTime = 0;
+        double lastTickTime = 0;
+        double accumulator = 0;
 
         void setViewPointCenter(cocos2d::CCPoint position);
 
@@ -33,6 +43,14 @@ namespace PlatformerGame {
         void prepareLayers();
 
         void createPhysicalWorld();
+
+        void update(float delta);
+
+        double getCurrentTimeInSeconds();
+
+        void addObjects();
+
+        BaseActor* addObject(std::string className, cocos2d::ValueMap& properties);
     };
 }
 

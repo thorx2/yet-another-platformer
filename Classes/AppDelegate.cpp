@@ -28,6 +28,7 @@
 #include "HelloWorldScene.h"
 
 #define USE_AUDIO_ENGINE 1
+
 // #define USE_SIMPLE_AUDIO_ENGINE 1
 
 #if USE_AUDIO_ENGINE && USE_SIMPLE_AUDIO_ENGINE
@@ -101,11 +102,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = PlatformerGame::GameScene::createScene();
+    auto scene = PlatformerGame::MainScene::createScene();
 
     // run
     director->runWithScene(scene);
-
+#if CC_ENABLE_BOX2D_INTEGRATION
+    CCLOG("Box2D enabled!");
+#endif
     return true;
 }
 

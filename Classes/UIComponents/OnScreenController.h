@@ -7,6 +7,7 @@
 
 
 #include "cocos2d.h"
+#include <ui/UIButton.h>
 #include <vector>
 
 namespace PlatformerGame {
@@ -14,17 +15,14 @@ namespace PlatformerGame {
     public:
         static cocos2d::Scene* createScene();
         virtual bool init();
-        void onTouchesEnded(const std::vector<cocos2d::Touch*>& touches, cocos2d::Event  *event);
-        void onTouchesBegan(const std::vector<cocos2d::Touch*>& touches, cocos2d::Event  *event);
-        void onTouchesMoved(const std::vector<cocos2d::Touch*>& touches, cocos2d::Event  *event);
         CREATE_FUNC(OnScreenController);
 
     private:
-        cocos2d::Sprite* leftButton;
-        cocos2d::Sprite* rightButton;
-        cocos2d::Sprite* attackButton;
-        cocos2d::Sprite* jumpButton;
-        cocos2d::Sprite* closeButton;
+        cocos2d::ui::Button* leftButton;
+        cocos2d::ui::Button* rightButton;
+        cocos2d::ui::Button* attackButton;
+        cocos2d::ui::Button* jumpButton;
+        cocos2d::ui::Button* closeButton;
     };
 }
 

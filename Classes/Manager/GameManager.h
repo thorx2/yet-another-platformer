@@ -8,7 +8,7 @@
 
 namespace PlatformerGame {
 
-    enum UIButton {
+    enum UIButtonType {
         eLeftMove,
         eRightMove,
         eAttack,
@@ -20,9 +20,9 @@ namespace PlatformerGame {
     public:
         static GameManager* GetInstance();
 
-        void OnInteractionReceived(UIButton buttonHit);
+        void OnInteractionReceived(UIButtonType buttonHit);
 
-        void OnInteractionStopped(UIButton buttonHit);
+        void OnInteractionStopped(UIButtonType buttonHit);
 
     private:
         GameManager();

@@ -52,18 +52,24 @@ list(APPEND GAME_SOURCE
         Classes/HelloWorldScene.cpp
         Classes/Manager/GameManager.cpp
         Classes/GenericClasses/BaseActor.cpp
+        Classes/GenericClasses/EnemyPlayer.cpp
         Classes/Scenes/GameScene.cpp
         Classes/Scenes/MainScene.cpp
         Classes/UIComponents/OnScreenController.cpp
+        Classes/B2DebugDraw/B2DebugDrawLayer.cpp
+        Classes/B2DebugDraw/GLES-Render.cpp
      )
 list(APPEND GAME_HEADER
         Classes/AppDelegate.h
         Classes/HelloWorldScene.h
         Classes/Manager/GameManager.h
         Classes/GenericClasses/BaseActor.h
+        Classes/GenericClasses/EnemyPlayer.h
         Classes/Scenes/MainScene.h
         Classes/Scenes/GameScene.h
         Classes/UIComponents/OnScreenController.h
+        Classes/B2DebugDraw/B2DebugDrawLayer.h
+        Classes/B2DebugDraw/GLES-Render.h
      )
 
 if(ANDROID)

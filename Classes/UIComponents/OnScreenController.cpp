@@ -21,35 +21,86 @@ namespace PlatformerGame {
             return false;
         }
 
-        auto touchListener = EventListenerTouchAllAtOnce::create();
-
-        touchListener->onTouchesBegan = [&](const std::vector<Touch*>& touches, Event* evt){
-            onTouchesBegan(touches, evt);
-        };
-
-        touchListener->onTouchesEnded = [&](const std::vector<Touch*>& touches, Event* evt){
-            onTouchesEnded(touches, evt);
-        };
-
-        touchListener->onTouchesMoved = [&](const std::vector<Touch*>& touches, Event* evt){
-            log("onTouchesMoved");
-        };
-
-
-        auto spritecache = SpriteFrameCache::getInstance();
+        auto spriteCache = SpriteFrameCache::getInstance();
 
         auto visibleSize = Director::getInstance()->getVisibleSize();
 
         Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-        spritecache->addSpriteFramesWithFile("tpassets/uiandcontrolls/controlls.plist",
+        spriteCache->addSpriteFramesWithFile("tpassets/uiandcontrolls/controlls.plist",
                                              "tpassets/uiandcontrolls/controlls.png");
 
-        leftButton = Sprite::createWithSpriteFrameName("MobileButtons/Buttons/3.png");
-        rightButton = Sprite::createWithSpriteFrameName("MobileButtons/Buttons/4.png");
-        attackButton = Sprite::createWithSpriteFrameName("MobileButtons/Buttons/5.png");
-        jumpButton = Sprite::createWithSpriteFrameName("MobileButtons/Buttons/6.png");
-        closeButton = Sprite::createWithSpriteFrameName("MobileButtons/Buttons/7.png");
+        //TODO Make this assignment better
+        leftButton = ui::Button::create("MobileButtons/Buttons/3.png", "", "", cocos2d::ui::Button::TextureResType::PLIST);
+        leftButton->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType touchType){
+            switch (touchType) {
+                case ui::Widget::TouchEventType::BEGAN:
+                    leftButton->setOpacity(200);
+                    break;
+                case ui::Widget::TouchEventType::CANCELED:
+                case ui::Widget::TouchEventType::ENDED:
+                    leftButton->setOpacity(255);
+                    break;
+                case ui::Widget::TouchEventType::MOVED:
+                    break;
+            }
+        });
+        rightButton = ui::Button::create("MobileButtons/Buttons/4.png", "", "", cocos2d::ui::Button::TextureResType::PLIST);
+        rightButton->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType touchType){
+            switch (touchType) {
+                case ui::Widget::TouchEventType::BEGAN:
+                    rightButton->setOpacity(200);
+                    break;
+                case ui::Widget::TouchEventType::CANCELED:
+                case ui::Widget::TouchEventType::ENDED:
+                    rightButton->setOpacity(255);
+                    break;
+                case ui::Widget::TouchEventType::MOVED:
+                    break;
+            }
+        });
+        attackButton = ui::Button::create("MobileButtons/Buttons/5.png", "", "", cocos2d::ui::Button::TextureResType::PLIST);
+        attackButton->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType touchType){
+            switch (touchType) {
+                case ui::Widget::TouchEventType::BEGAN:
+                    attackButton->setOpacity(200);
+                    break;
+                case ui::Widget::TouchEventType::CANCELED:
+                case ui::Widget::TouchEventType::ENDED:
+                    attackButton->setOpacity(255);
+                    break;
+                case ui::Widget::TouchEventType::MOVED:
+                    break;
+            }
+        });
+        closeButton = ui::Button::create("MobileButtons/Buttons/7.png", "", "", cocos2d::ui::Button::TextureResType::PLIST);
+        closeButton->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType touchType){
+            switch (touchType) {
+                case ui::Widget::TouchEventType::BEGAN:
+                    closeButton->setOpacity(200);
+                    break;
+                case ui::Widget::TouchEventType::CANCELED:
+                case ui::Widget::TouchEventType::ENDED:
+                    closeButton->setOpacity(255);
+                    break;
+                case ui::Widget::TouchEventType::MOVED:
+                    break;
+            }
+        });
+        jumpButton = ui::Button::create("MobileButtons/Buttons/6.png", "", "", cocos2d::ui::Button::TextureResType::PLIST);
+        jumpButton->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType touchType){
+            switch (touchType) {
+                case ui::Widget::TouchEventType::BEGAN:
+                    jumpButton->setOpacity(200);
+                    break;
+                case ui::Widget::TouchEventType::CANCELED:
+                case ui::Widget::TouchEventType::ENDED:
+                    jumpButton->setOpacity(255);
+                    break;
+                case ui::Widget::TouchEventType::MOVED:
+                    break;
+            }
+        });
 
         float x = origin.x + visibleSize.width - closeButton->getContentSize().width;
         float y = origin.y + visibleSize.height - closeButton->getContentSize().height;
@@ -71,13 +122,11 @@ namespace PlatformerGame {
         y = origin.y + (jumpButton->getContentSize().height * 3)+ 5;
         jumpButton->setPosition(Vec2(x, y));
 
-        this->addChild(closeButton);
-        this->addChild(leftButton);
-        this->addChild(rightButton);
-        this->addChild(jumpButton);
-        this->addChild(attackButton);
-
-        Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
+        this->addChild(closeButton, 2);
+        this->addChild(leftButton, 2);
+        this->addChild(rightButton, 2);
+        this->addChild(jumpButton, 2);
+        this->addChild(attackButton, 2);
 
         return true;
     }
@@ -87,48 +136,5 @@ namespace PlatformerGame {
         auto layer = OnScreenController::create();
         scene->addChild(layer);
         return scene;
-    }
-
-    void OnScreenController::onTouchesBegan(const std::vector<Touch*>& touches, Event  *event) {
-
-        for(auto touch : touches) {
-            if (closeButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                closeButton->setOpacity(200);
-                GameManager::GetInstance()->OnInteractionReceived(eInGameMenu);
-            } else if (leftButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                leftButton->setOpacity(200);
-                GameManager::GetInstance()->OnInteractionReceived(eLeftMove);
-            } else if (rightButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                rightButton->setOpacity(200);
-                GameManager::GetInstance()->OnInteractionReceived(eRightMove);
-            } else if (attackButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                attackButton->setOpacity(200);
-                GameManager::GetInstance()->OnInteractionReceived(eAttack);
-            } else if (jumpButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                jumpButton->setOpacity(200);
-                GameManager::GetInstance()->OnInteractionReceived(eJump);
-            }
-        }
-    }
-
-    void OnScreenController::onTouchesEnded(const std::vector<Touch*>& touches, Event  *event) {
-        for(auto touch : touches) {
-            if (closeButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                closeButton->setOpacity(255);
-                Director::getInstance()->end();
-            } else if (leftButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                leftButton->setOpacity(255);
-            } else if (rightButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                rightButton->setOpacity(255);
-            } else if (attackButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                attackButton->setOpacity(255);
-            } else if (jumpButton->getBoundingBox().containsPoint(touch->getLocation())) {
-                jumpButton->setOpacity(255);
-            }
-        }
-    }
-
-    void OnScreenController::onTouchesMoved(const std::vector<cocos2d::Touch*>& touches, cocos2d::Event  *event) {
-
     }
 }

@@ -20,11 +20,11 @@ namespace PlatformerGame {
         return instance;
     }
 
-    void GameManager::OnInteractionReceived(UIButton buttonHit) {
+    void GameManager::OnInteractionReceived(UIButtonType buttonHit) {
 
     }
 
-    void GameManager::OnInteractionStopped(UIButton buttonHit) {
+    void GameManager::OnInteractionStopped(UIButtonType buttonHit) {
 
     }
 }
