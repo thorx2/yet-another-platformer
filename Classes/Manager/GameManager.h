@@ -6,13 +6,15 @@
 #define PROJ_ANDROID_GAMEMANAGER_H
 
 
+#include <GenericClasses/BaseActor.h>
+
 namespace PlatformerGame {
 
     enum UIButtonType {
         eLeftMove,
         eRightMove,
-        eAttack,
-        eJump,
+        eAttackMove,
+        eJumpMove,
         eInGameMenu
     };
 
@@ -24,8 +26,14 @@ namespace PlatformerGame {
 
         void OnInteractionStopped(UIButtonType buttonHit);
 
+        void SetPlayerActor(BaseActor* player);
+
+        BaseActor* GetPCActor();
+
     private:
         GameManager();
+
+        BaseActor* m_player;
     };
 }
 

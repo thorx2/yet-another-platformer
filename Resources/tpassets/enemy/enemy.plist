@@ -4,257 +4,907 @@
   <dict>
     <key>frames</key>
     <dict>
-      <key>TheCrustyCrew/Crabby/11-Attack Effect/Attack Effect 03.png</key>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{0,0},{118,7}}</string>
+        <string>{{2,2},{39,29}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,1.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{118,7}}</string>
+        <string>{{17,0},{39,29}}</string>
         <key>sourceSize</key>
-        <string>{118,7}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/11-Attack Effect/Attack Effect 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{118,0},{108,15}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{108,15}}</string>
-        <key>sourceSize</key>
-        <string>{108,15}</string>
+        <string>{72,32}</string>
       </dict>
       <key>TheCrustyCrew/Crabby/11-Attack Effect/Attack Effect 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{0,7},{92,23}}</string>
+        <string>{{45,2},{92,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{92,23}}</string>
-        <key>sourceSize</key>
-        <string>{92,23}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{92,7},{40,26}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0,-0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{40,26}}</string>
+        <string>{{13,1},{92,23}}</string>
         <key>sourceSize</key>
-        <string>{40,26}</string>
+        <string>{118,24}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/11-Attack Effect/Attack Effect 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,35},{118,7}}</string>
+        <key>offset</key>
+        <string>{0,-0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{0,9},{118,7}}</string>
+        <key>sourceSize</key>
+        <string>{118,24}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/11-Attack Effect/Attack Effect 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{13,35},{108,15}}</string>
+        <key>offset</key>
+        <string>{0,-0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{5,5},{108,15}}</string>
+        <key>sourceSize</key>
+        <string>{118,24}</string>
       </dict>
       <key>TheCrustyCrew/Crabby/07-Attack/Attack 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{0,30},{68,19}}</string>
+        <string>{{32,98},{68,19}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{2,-3.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{68,19}}</string>
+        <string>{{4,10},{68,19}}</string>
         <key>sourceSize</key>
-        <string>{68,19}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 06.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{68,30},{40,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,24}}</string>
-        <key>sourceSize</key>
-        <string>{40,24}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/07-Attack/Attack 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{0,49},{60,19}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{60,19}}</string>
-        <key>sourceSize</key>
-        <string>{60,19}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{60,49},{8,10}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{8,10}}</string>
-        <key>sourceSize</key>
-        <string>{8,10}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Jump 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{60,59},{14,7}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{14,7}}</string>
-        <key>sourceSize</key>
-        <string>{14,7}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Fall 05.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{67,59},{48,1}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{48,1}}</string>
-        <key>sourceSize</key>
-        <string>{48,1}</string>
+        <string>{72,32}</string>
       </dict>
       <key>TheCrustyCrew/DustParticles/Fall 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{0,68},{52,5}}</string>
+        <string>{{32,35},{52,5}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{52,5}}</string>
-        <key>sourceSize</key>
-        <string>{52,5}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/11-Attack Effect/Attack Effect 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{52,68},{7,12}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{7,12}}</string>
-        <key>sourceSize</key>
-        <string>{7,12}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Jump 06.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{59,68},{2,1}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0,-5.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{2,1}}</string>
+        <string>{{0,13},{52,5}}</string>
         <key>sourceSize</key>
-        <string>{2,1}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Run 05.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{59,70},{2,1}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{2,1}}</string>
-        <key>sourceSize</key>
-        <string>{2,1}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Run 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{59,73},{7,5}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{7,5}}</string>
-        <key>sourceSize</key>
-        <string>{7,5}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Fall 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{0,73},{50,3}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{50,3}}</string>
-        <key>sourceSize</key>
-        <string>{50,3}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Fall 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{50,73},{34,2}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{34,2}}</string>
-        <key>sourceSize</key>
-        <string>{34,2}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{52,80},{15,4}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{15,4}}</string>
-        <key>sourceSize</key>
-        <string>{15,4}</string>
+        <string>{52,20}</string>
       </dict>
       <key>TheCrustyCrew/DustParticles/Run 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{59,78},{5,2}}</string>
+        <string>{{32,91},{5,2}}</string>
+        <key>offset</key>
+        <string>{-3.5,-9}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{20,18},{5,2}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/07-Attack/Attack 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{72,2},{60,19}}</string>
+        <key>offset</key>
+        <string>{2,-3.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{8,10},{60,19}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Fall 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{72,25},{50,3}}</string>
+        <key>offset</key>
+        <string>{0,-3.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{1,12},{50,3}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Fall 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{72,32},{48,5}}</string>
+        <key>offset</key>
+        <string>{0,-7.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{2,15},{48,5}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Fall 05.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{72,41},{48,1}}</string>
+        <key>offset</key>
+        <string>{0,-3.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{2,13},{48,1}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{72,46},{42,23}}</string>
+        <key>offset</key>
+        <string>{2,-1.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,6},{42,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 09.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{104,73},{41,23}}</string>
+        <key>offset</key>
+        <string>{1.5,-1.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,6},{41,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{72,73},{26,21}}</string>
+        <key>offset</key>
+        <string>{1,-0.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{5,5},{26,21}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{126,25},{40,26}}</string>
+        <key>offset</key>
+        <string>{1,0}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,3},{40,26}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{118,46},{15,4}}</string>
+        <key>offset</key>
+        <string>{0.5,-4}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{1,8},{15,4}}</string>
+        <key>sourceSize</key>
+        <string>{16,12}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Run 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{118,65},{3,3}}</string>
+        <key>offset</key>
+        <string>{-12.5,-3.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{12,12},{3,3}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/05-Ground/Ground 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{136,2},{40,19}}</string>
+        <key>offset</key>
+        <string>{1,-3.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,10},{40,19}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Fall 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{126,55},{34,2}}</string>
+        <key>offset</key>
+        <string>{0,-9}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{9,18},{34,2}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/03-Jump/Jump 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{104,118},{40,26}}</string>
         <key>offset</key>
         <string>{0,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{5,2}}</string>
+        <string>{{16,3},{40,26}}</string>
         <key>sourceSize</key>
-        <string>{5,2}</string>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 05.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{13,147},{40,25}}</string>
+        <key>offset</key>
+        <string>{1,-0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,4},{40,25}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/07-Attack/Attack 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{32,121},{40,22}}</string>
+        <key>offset</key>
+        <string>{1,-2}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,7},{40,22}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 06.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{42,147},{40,24}}</string>
+        <key>offset</key>
+        <string>{1,-1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,5},{40,24}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/02-Run/Run 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{70,147},{40,24}}</string>
+        <key>offset</key>
+        <string>{1,0}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,4},{40,24}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{76,121},{24,22}}</string>
+        <key>offset</key>
+        <string>{1,-2}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{6,6},{24,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Jump 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,157},{14,7}}</string>
+        <key>offset</key>
+        <string>{0,-6.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{19,13},{14,7}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/11-Attack Effect/Attack Effect 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,175},{7,12}}</string>
+        <key>offset</key>
+        <string>{-7.5,5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{0,1},{7,12}}</string>
+        <key>sourceSize</key>
+        <string>{22,24}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/02-Run/Run 05.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{131,61},{40,24}}</string>
+        <key>offset</key>
+        <string>{1,0}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,4},{40,24}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Jump 06.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{125,65},{2,1}}</string>
+        <key>offset</key>
+        <string>{-5,8.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{20,1},{2,1}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 07.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{170,25},{40,23}}</string>
+        <key>offset</key>
+        <string>{1,-1.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,6},{40,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/06-Anticipation/Anticipation 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{180,2},{34,19}}</string>
+        <key>offset</key>
+        <string>{1,-3.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{20,10},{34,19}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/06-Anticipation/Anticipation 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{218,2},{34,18}}</string>
+        <key>offset</key>
+        <string>{1,-4}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{20,11},{34,18}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/10-Dead Ground/Dead Ground 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{256,2},{27,19}}</string>
+        <key>offset</key>
+        <string>{3.5,-5.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{7,11},{27,19}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{170,52},{5,12}}</string>
+        <key>offset</key>
+        <string>{2.5,0}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{8,0},{5,12}}</string>
+        <key>sourceSize</key>
+        <string>{16,12}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Run 05.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{164,55},{2,1}}</string>
+        <key>offset</key>
+        <string>{-12,-3.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{13,13},{2,1}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 08.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{131,89},{40,23}}</string>
+        <key>offset</key>
+        <string>{1,-1.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,6},{40,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/02-Run/Run 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{148,116},{40,23}}</string>
+        <key>offset</key>
+        <string>{1,1.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,3},{40,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/02-Run/Run 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{98,148},{40,23}}</string>
+        <key>offset</key>
+        <string>{1,-1.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,6},{40,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/02-Run/Run 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,191},{40,23}}</string>
+        <key>offset</key>
+        <string>{1,1.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,3},{40,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/02-Run/Run 06.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{29,191},{40,23}}</string>
+        <key>offset</key>
+        <string>{1,-1.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,6},{40,23}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/06-Anticipation/Anticipation 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{56,191},{40,21}}</string>
+        <key>offset</key>
+        <string>{1,-2.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,8},{40,21}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/11-Attack Effect/Attack Effect 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{81,191},{10,20}}</string>
+        <key>offset</key>
+        <string>{6,-2}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{12,4},{10,20}}</string>
+        <key>sourceSize</key>
+        <string>{22,24}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/10-Dead Ground/Dead Ground 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{125,148},{25,18}}</string>
+        <key>offset</key>
+        <string>{1.5,-6}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{6,12},{25,18}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/01-Idle/Idle 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{147,160},{39,28}}</string>
+        <key>offset</key>
+        <string>{0.5,1}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,1},{39,28}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/04-Fall/Fall 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{186,52},{39,25}}</string>
+        <key>offset</key>
+        <string>{0.5,0.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,3},{39,25}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{218,24},{22,30}}</string>
+        <key>offset</key>
+        <string>{0,1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{25,0},{22,30}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Dialogue/Dead/Dead In 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{175,61},{11,5}}</string>
+        <key>offset</key>
+        <string>{-0.5,0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{1,3},{11,5}}</string>
+        <key>sourceSize</key>
+        <string>{14,12}</string>
+      </dict>
+      <key>TheCrustyCrew/Dialogue/Exclamation/Exclamation In 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{175,76},{9,5}}</string>
+        <key>offset</key>
+        <string>{-0.5,0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{2,3},{9,5}}</string>
+        <key>sourceSize</key>
+        <string>{14,12}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/03-Jump/Jump 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{184,81},{38,27}}</string>
+        <key>offset</key>
+        <string>{0,0.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,2},{38,27}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Run 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{175,89},{7,5}}</string>
+        <key>offset</key>
+        <string>{-9.5,-7.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{13,15},{7,5}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Run 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{175,100},{4,5}}</string>
+        <key>offset</key>
+        <string>{-13,-5.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{11,13},{4,5}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{175,109},{4,5}}</string>
+        <key>offset</key>
+        <string>{0,0.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{6,3},{4,5}}</string>
+        <key>sourceSize</key>
+        <string>{16,12}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/08-Hit/Hit 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{183,112},{38,22}}</string>
+        <key>offset</key>
+        <string>{-6,0}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{11,5},{38,22}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Jump 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{183,138},{17,12}}</string>
+        <key>offset</key>
+        <string>{-0.5,4}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{17,0},{17,12}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Jump 05.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{125,177},{17,11}}</string>
+        <key>offset</key>
+        <string>{-0.5,4.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{17,0},{17,11}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/05-Ground/Ground 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{95,192},{38,21}}</string>
+        <key>offset</key>
+        <string>{1,-2.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{18,8},{38,21}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/11-Attack Effect/Attack Effect 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{81,215},{9,16}}</string>
+        <key>offset</key>
+        <string>{-3.5,1}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{3,3},{9,16}}</string>
+        <key>sourceSize</key>
+        <string>{22,24}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/03-Jump/Jump 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{190,154},{36,28}}</string>
+        <key>offset</key>
+        <string>{0,1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{18,1},{36,28}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/08-Hit/Hit 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{140,192},{36,25}}</string>
+        <key>offset</key>
+        <string>{-6,0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{12,3},{36,25}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/08-Hit/Hit 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{140,232},{36,25}}</string>
+        <key>offset</key>
+        <string>{-6,0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{12,3},{36,25}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/08-Hit/Hit 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,235},{33,28}}</string>
+        <key>offset</key>
+        <string>{-5.5,1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{14,1},{33,28}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/07-Attack/Attack 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,272},{32,25}}</string>
+        <key>offset</key>
+        <string>{1,-0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{21,4},{32,25}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/03-Jump/Jump 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{34,235},{29,23}}</string>
+        <key>offset</key>
+        <string>{0.5,-0.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{3,4},{29,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/08-Hit/Hit 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{34,268},{29,22}}</string>
+        <key>offset</key>
+        <string>{2.5,-1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{5,5},{29,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/05-Ground/Ground 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{60,268},{29,20}}</string>
+        <key>offset</key>
+        <string>{0.5,-4}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{3,9},{29,20}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{61,235},{28,26}}</string>
+        <key>offset</key>
+        <string>{1,1}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{23,2},{28,26}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{84,265},{25,28}}</string>
+        <key>offset</key>
+        <string>{0.5,1}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{24,1},{25,28}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{94,234},{25,28}}</string>
+        <key>offset</key>
+        <string>{0.5,1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{24,1},{25,28}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Jump 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{120,198},{16,12}}</string>
+        <key>offset</key>
+        <string>{0,3}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{18,1},{16,12}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Exclamation/Exclamation In 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{52,84},{14,12}}</string>
+        <string>{{120,218},{14,12}}</string>
         <key>offset</key>
         <string>{0,0}</string>
         <key>rotated</key>
@@ -264,1825 +914,1175 @@
         <key>sourceSize</key>
         <string>{14,12}</string>
       </dict>
+      <key>TheCrustyCrew/Crabby/10-Dead Ground/Dead Ground 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{113,263},{23,28}}</string>
+        <key>offset</key>
+        <string>{1.5,-1}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{26,3},{23,28}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
+      </dict>
+      <key>TheCrustyCrew/DustParticles/Jump 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{126,234},{12,10}}</string>
+        <key>offset</key>
+        <string>{0,-1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{20,6},{12,10}}</string>
+        <key>sourceSize</key>
+        <string>{52,20}</string>
+      </dict>
+      <key>TheCrustyCrew/Dialogue/Interrogation/Interrogation In 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{126,250},{9,10}}</string>
+        <key>offset</key>
+        <string>{-0.5,0}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{2,1},{9,10}}</string>
+        <key>sourceSize</key>
+        <string>{14,12}</string>
+      </dict>
       <key>TheCrustyCrew/Dialogue/Dead/Dead In 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{52,96},{13,12}}</string>
+        <string>{{204,138},{13,12}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
         <string>{{0,0},{13,12}}</string>
         <key>sourceSize</key>
-        <string>{13,12}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Fall 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{0,76},{48,5}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{48,5}}</string>
-        <key>sourceSize</key>
-        <string>{48,5}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{0,81},{42,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{42,23}}</string>
-        <key>sourceSize</key>
-        <string>{42,23}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{42,81},{5,12}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{5,12}}</string>
-        <key>sourceSize</key>
-        <string>{5,12}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Run 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{47,81},{3,3}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{3,3}}</string>
-        <key>sourceSize</key>
-        <string>{3,3}</string>
-      </dict>
-      <key>TheCrustyCrew/Dialogue/Dead/Dead In 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{42,93},{11,5}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{11,5}}</string>
-        <key>sourceSize</key>
-        <string>{11,5}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 09.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{0,104},{41,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{41,23}}</string>
-        <key>sourceSize</key>
-        <string>{41,23}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Jump 05.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{41,107},{17,11}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{17,11}}</string>
-        <key>sourceSize</key>
-        <string>{17,11}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Exclamation/Exclamation In 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{41,124},{11,12}}</string>
+        <string>{{221,138},{11,12}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{11,12}}</string>
-        <key>sourceSize</key>
-        <string>{11,12}</string>
-      </dict>
-      <key>TheCrustyCrew/Dialogue/Interrogation/Interrogation In 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{41,136},{11,12}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{11,12}}</string>
-        <key>sourceSize</key>
-        <string>{11,12}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/03-Jump/Jump 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{0,127},{40,26}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,26}}</string>
-        <key>sourceSize</key>
-        <string>{40,26}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 05.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{226,0},{40,25}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,25}}</string>
-        <key>sourceSize</key>
-        <string>{40,25}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/02-Run/Run 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{118,15},{40,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,24}}</string>
-        <key>sourceSize</key>
-        <string>{40,24}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/02-Run/Run 05.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{158,15},{40,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,24}}</string>
-        <key>sourceSize</key>
-        <string>{40,24}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{198,15},{39,28}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{39,28}}</string>
+        <string>{{1,0},{11,12}}</string>
         <key>sourceSize</key>
-        <string>{39,28}</string>
+        <string>{14,12}</string>
       </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 07.png</key>
+      <key>TheCrustyCrew/PinkStar/03-Jump/Jump 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{118,39},{40,23}}</string>
+        <string>{{229,50},{25,28}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,23}}</string>
-        <key>sourceSize</key>
-        <string>{40,23}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{92,47},{28,26}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,0}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{28,26}}</string>
+        <string>{{5,1},{25,28}}</string>
         <key>sourceSize</key>
-        <string>{28,26}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/PinkStar/01-Idle/Idle 02.png</key>
+      <key>TheCrustyCrew/FierceTooth/05-Ground/Ground 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{68,70},{27,24}}</string>
+        <string>{{252,25},{26,20}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{27,24}}</string>
-        <key>sourceSize</key>
-        <string>{27,24}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 08.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{158,39},{40,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-3}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{40,23}}</string>
+        <string>{{5,8},{26,20}}</string>
         <key>sourceSize</key>
-        <string>{40,23}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/02-Run/Run 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{266,0},{40,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,23}}</string>
-        <key>sourceSize</key>
-        <string>{40,23}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/02-Run/Run 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{306,0},{40,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,23}}</string>
-        <key>sourceSize</key>
-        <string>{40,23}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/02-Run/Run 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{346,0},{40,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,23}}</string>
-        <key>sourceSize</key>
-        <string>{40,23}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/02-Run/Run 06.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{386,0},{40,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,23}}</string>
-        <key>sourceSize</key>
-        <string>{40,23}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/07-Attack/Attack 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{426,0},{40,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,22}}</string>
-        <key>sourceSize</key>
-        <string>{40,22}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/06-Anticipation/Anticipation 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{466,0},{40,21}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,21}}</string>
-        <key>sourceSize</key>
-        <string>{40,21}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/05-Ground/Ground 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{506,0},{40,19}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{40,19}}</string>
-        <key>sourceSize</key>
-        <string>{40,19}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/01-Idle/Idle 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{546,0},{39,29}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{39,29}}</string>
-        <key>sourceSize</key>
-        <string>{39,29}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/04-Fall/Fall 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{506,19},{39,25}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{39,25}}</string>
-        <key>sourceSize</key>
-        <string>{39,25}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/03-Jump/Jump 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{466,21},{38,27}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{38,27}}</string>
-        <key>sourceSize</key>
-        <string>{38,27}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/08-Hit/Hit 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{426,22},{38,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{38,22}}</string>
-        <key>sourceSize</key>
-        <string>{38,22}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/05-Ground/Ground 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{266,23},{38,21}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{38,21}}</string>
-        <key>sourceSize</key>
-        <string>{38,21}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/03-Jump/Jump 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{226,25},{36,28}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{36,28}}</string>
-        <key>sourceSize</key>
-        <string>{36,28}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Run 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{262,25},{4,5}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{4,5}}</string>
-        <key>sourceSize</key>
-        <string>{4,5}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{262,30},{4,5}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{4,5}}</string>
-        <key>sourceSize</key>
-        <string>{4,5}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/08-Hit/Hit 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{304,23},{36,25}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{36,25}}</string>
-        <key>sourceSize</key>
-        <string>{36,25}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/08-Hit/Hit 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{262,44},{36,25}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{36,25}}</string>
-        <key>sourceSize</key>
-        <string>{36,25}</string>
-      </dict>
-      <key>TheCrustyCrew/Dialogue/Exclamation/Exclamation In 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{298,44},{9,5}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{9,5}}</string>
-        <key>sourceSize</key>
-        <string>{9,5}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/06-Anticipation/Anticipation 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{226,53},{34,19}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{34,19}}</string>
-        <key>sourceSize</key>
-        <string>{34,19}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/08-Hit/Hit 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{198,54},{33,28}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{33,28}}</string>
-        <key>sourceSize</key>
-        <string>{33,28}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/06-Anticipation/Anticipation 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{118,72},{34,18}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{34,18}}</string>
-        <key>sourceSize</key>
-        <string>{34,18}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/11-Attack Effect/Attack Effect 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{118,62},{10,20}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{10,20}}</string>
-        <key>sourceSize</key>
-        <string>{10,20}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Jump 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{138,62},{12,10}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{12,10}}</string>
-        <key>sourceSize</key>
-        <string>{12,10}</string>
-      </dict>
-      <key>TheCrustyCrew/Dialogue/Dead/Dead In 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{150,62},{11,10}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{11,10}}</string>
-        <key>sourceSize</key>
-        <string>{11,10}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/04-Fall/Fall 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{92,75},{27,26}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{27,26}}</string>
-        <key>sourceSize</key>
-        <string>{27,26}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/01-Idle/Idle 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{68,97},{27,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{27,24}}</string>
-        <key>sourceSize</key>
-        <string>{27,24}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Jump 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{52,108},{16,12}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{16,12}}</string>
-        <key>sourceSize</key>
-        <string>{16,12}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/11-Attack Effect/Attack Effect 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{52,120},{9,16}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{9,16}}</string>
-        <key>sourceSize</key>
-        <string>{9,16}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/07-Attack/Attack 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{161,62},{32,25}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{32,25}}</string>
-        <key>sourceSize</key>
-        <string>{32,25}</string>
-      </dict>
-      <key>TheCrustyCrew/Dialogue/Interrogation/Interrogation In 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{152,72},{9,10}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{9,10}}</string>
-        <key>sourceSize</key>
-        <string>{9,10}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{340,23},{22,30}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{22,30}}</string>
-        <key>sourceSize</key>
-        <string>{22,30}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/03-Jump/Jump 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{370,23},{29,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{29,23}}</string>
-        <key>sourceSize</key>
-        <string>{29,23}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/07-Attack/Attack 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{399,23},{27,27}}</string>
+        <string>{{229,79},{27,27}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-3.5,1.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
         <string>{{0,0},{27,27}}</string>
         <key>sourceSize</key>
-        <string>{27,27}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/PinkStar/08-Hit/Hit 03.png</key>
+      <key>TheCrustyCrew/PinkStar/04-Fall/Fall 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{340,45},{29,22}}</string>
+        <string>{{260,79},{27,26}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{29,22}}</string>
+        <string>{{4,2},{27,26}}</string>
         <key>sourceSize</key>
-        <string>{29,22}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/05-Ground/Ground 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{369,46},{29,20}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{29,20}}</string>
-        <key>sourceSize</key>
-        <string>{29,20}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{303,48},{25,28}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,28}}</string>
-        <key>sourceSize</key>
-        <string>{25,28}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/09-Dead Hit/Dead Hit 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{426,44},{25,28}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,28}}</string>
-        <key>sourceSize</key>
-        <string>{25,28}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/03-Jump/Jump 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{398,50},{25,28}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,28}}</string>
-        <key>sourceSize</key>
-        <string>{25,28}</string>
-      </dict>
-      <key>TheCrustyCrew/DustParticles/Jump 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{454,44},{17,12}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{17,12}}</string>
-        <key>sourceSize</key>
-        <string>{17,12}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/10-Dead Ground/Dead Ground 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{369,66},{23,28}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{23,28}}</string>
-        <key>sourceSize</key>
-        <string>{23,28}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/07-Attack/Attack 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{331,67},{25,27}}</string>
+        <string>{{287,2},{25,27}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-1.5,1.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{25,27}}</string>
+        <string>{{3,0},{25,27}}</string>
         <key>sourceSize</key>
-        <string>{25,27}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/01-Idle/Idle 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{260,69},{27,25}}</string>
+        <string>{{318,2},{27,25}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,-1.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,25}}</string>
+        <string>{{3,4},{27,25}}</string>
         <key>sourceSize</key>
-        <string>{27,25}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/01-Idle/Idle 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{226,75},{27,25}}</string>
+        <string>{{282,31},{27,25}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-1.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,25}}</string>
+        <string>{{4,4},{27,25}}</string>
         <key>sourceSize</key>
-        <string>{27,25}</string>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/Dialogue/Interrogation/Interrogation In 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{261,49},{11,12}}</string>
+        <key>offset</key>
+        <string>{-0.5,0}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{1,0},{11,12}}</string>
+        <key>sourceSize</key>
+        <string>{14,12}</string>
+      </dict>
+      <key>TheCrustyCrew/Dialogue/Dead/Dead In 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{261,65},{11,10}}</string>
+        <key>offset</key>
+        <string>{-0.5,0}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{1,1},{11,10}}</string>
+        <key>sourceSize</key>
+        <string>{14,12}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/11-Attack Effect/Attack Effect 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{276,60},{8,10}}</string>
+        <key>offset</key>
+        <string>{4,0}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{8,1},{8,10}}</string>
+        <key>sourceSize</key>
+        <string>{16,12}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/01-Idle/Idle 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{226,110},{27,24}}</string>
+        <key>offset</key>
+        <string>{-1.5,-2}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{2,5},{27,24}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/01-Idle/Idle 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{257,110},{27,24}}</string>
+        <key>offset</key>
+        <string>{-0.5,-2}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{3,5},{27,24}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/01-Idle/Idle 05.png</key>
       <dict>
         <key>frame</key>
-        <string>{{287,73},{27,25}}</string>
+        <string>{{169,194},{27,25}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1.5,-1.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,25}}</string>
+        <string>{{5,4},{27,25}}</string>
         <key>sourceSize</key>
-        <string>{27,25}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/01-Idle/Idle 08.png</key>
       <dict>
         <key>frame</key>
-        <string>{{253,94},{27,25}}</string>
+        <string>{{200,194},{27,25}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-1.5}</string>
         <key>rotated</key>
-        <false/>
+        <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,25}}</string>
+        <string>{{4,4},{27,25}}</string>
         <key>sourceSize</key>
-        <string>{27,25}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/02-Run/Run 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{152,87},{27,25}}</string>
+        <string>{{169,223},{27,25}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-0.5}</string>
         <key>rotated</key>
-        <false/>
+        <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,25}}</string>
+        <string>{{4,3},{27,25}}</string>
         <key>sourceSize</key>
-        <string>{27,25}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/02-Run/Run 05.png</key>
       <dict>
         <key>frame</key>
-        <string>{{118,90},{27,25}}</string>
+        <string>{{222,153},{27,25}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-0.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,25}}</string>
+        <string>{{4,3},{27,25}}</string>
         <key>sourceSize</key>
-        <string>{27,25}</string>
-      </dict>
-      <key>TheCrustyCrew/Crabby/10-Dead Ground/Dead Ground 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{92,102},{25,26}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,26}}</string>
-        <key>sourceSize</key>
-        <string>{25,26}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/01-Idle/Idle 06.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{68,124},{27,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{27,24}}</string>
-        <key>sourceSize</key>
-        <string>{27,24}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/03-Jump/Jump 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{40,148},{27,25}}</string>
+        <string>{{198,225},{27,25}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-0.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,25}}</string>
+        <string>{{4,3},{27,25}}</string>
         <key>sourceSize</key>
-        <string>{27,25}</string>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/01-Idle/Idle 06.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{229,182},{27,24}}</string>
+        <key>offset</key>
+        <string>{2.5,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{6,5},{27,24}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/01-Idle/Idle 07.png</key>
       <dict>
         <key>frame</key>
-        <string>{{40,173},{27,24}}</string>
+        <string>{{253,138},{27,24}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1.5,-2}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,24}}</string>
+        <string>{{5,5},{27,24}}</string>
         <key>sourceSize</key>
-        <string>{27,24}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/08-Hit/Hit 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{40,197},{27,24}}</string>
+        <string>{{229,213},{27,24}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{2.5,-1}</string>
         <key>rotated</key>
-        <false/>
+        <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,24}}</string>
+        <string>{{6,4},{27,24}}</string>
         <key>sourceSize</key>
-        <string>{27,24}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/08-Hit/Hit 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{0,153},{27,24}}</string>
+        <string>{{229,244},{27,24}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{2.5,-1}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,24}}</string>
+        <string>{{6,4},{27,24}}</string>
         <key>sourceSize</key>
-        <string>{27,24}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/02-Run/Run 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{0,177},{27,23}}</string>
+        <string>{{257,166},{27,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,0.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,23}}</string>
+        <string>{{4,3},{27,23}}</string>
         <key>sourceSize</key>
-        <string>{27,23}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/02-Run/Run 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{0,200},{27,23}}</string>
+        <string>{{284,138},{27,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-2.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,23}}</string>
+        <string>{{4,6},{27,23}}</string>
         <key>sourceSize</key>
-        <string>{27,23}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/02-Run/Run 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{179,87},{27,23}}</string>
+        <string>{{313,31},{27,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,0.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,23}}</string>
+        <string>{{4,3},{27,23}}</string>
         <key>sourceSize</key>
-        <string>{27,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/05-Ground/Ground 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{206,87},{26,20}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{26,20}}</string>
-        <key>sourceSize</key>
-        <string>{26,20}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/02-Run/Run 06.png</key>
       <dict>
         <key>frame</key>
-        <string>{{179,110},{27,23}}</string>
+        <string>{{313,58},{27,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-2.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,23}}</string>
+        <string>{{4,6},{27,23}}</string>
         <key>sourceSize</key>
-        <string>{27,23}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/05-Ground/Ground 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{226,100},{27,23}}</string>
+        <string>{{291,85},{27,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-2.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,23}}</string>
+        <string>{{4,6},{27,23}}</string>
         <key>sourceSize</key>
-        <string>{27,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{206,113},{20,26}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{20,26}}</string>
-        <key>sourceSize</key>
-        <string>{20,26}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/06-Anticipation/Anticipation 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{226,123},{27,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{27,23}}</string>
-        <key>sourceSize</key>
-        <string>{27,23}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/03-Jump/Jump 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{145,112},{27,22}}</string>
+        <string>{{291,112},{27,22}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,22}}</string>
+        <string>{{4,4},{27,22}}</string>
         <key>sourceSize</key>
-        <string>{27,22}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/06-Anticipation/Anticipation 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{118,115},{27,22}}</string>
+        <string>{{322,112},{27,22}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-3}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{27,22}}</string>
+        <string>{{4,7},{27,22}}</string>
         <key>sourceSize</key>
-        <string>{27,22}</string>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{353,112},{20,26}}</string>
+        <key>offset</key>
+        <string>{1,0}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{8,2},{20,26}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/06-Anticipation/Anticipation 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{349,2},{27,23}}</string>
+        <key>offset</key>
+        <string>{2.5,-2.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{6,6},{27,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/Crabby/10-Dead Ground/Dead Ground 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{380,2},{25,26}}</string>
+        <key>offset</key>
+        <string>{1.5,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{25,5},{25,26}}</string>
+        <key>sourceSize</key>
+        <string>{72,32}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/08-Hit/Hit 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{92,134},{25,26}}</string>
+        <string>{{349,29},{25,26}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,26}}</string>
-        <key>sourceSize</key>
-        <string>{25,26}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/03-Jump/Jump 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{67,151},{25,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{2.5,-1}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{25,24}}</string>
+        <string>{{7,3},{25,26}}</string>
         <key>sourceSize</key>
-        <string>{25,24}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/10-Dead Ground/Dead Ground 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{67,175},{23,25}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{23,25}}</string>
-        <key>sourceSize</key>
-        <string>{23,25}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/10-Dead Ground/Dead Ground 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{172,133},{27,19}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{27,19}}</string>
-        <key>sourceSize</key>
-        <string>{27,19}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/Crabby/10-Dead Ground/Dead Ground 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{199,139},{26,24}}</string>
+        <string>{{378,31},{26,24}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-4}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{26,24}}</string>
+        <string>{{24,8},{26,24}}</string>
         <key>sourceSize</key>
-        <string>{26,24}</string>
+        <string>{72,32}</string>
       </dict>
       <key>TheCrustyCrew/Crabby/10-Dead Ground/Dead Ground 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{172,152},{24,26}}</string>
+        <string>{{344,59},{24,26}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-3}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{24,26}}</string>
+        <string>{{25,6},{24,26}}</string>
         <key>sourceSize</key>
-        <string>{24,26}</string>
+        <string>{72,32}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/03-Jump/Jump 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{145,134},{23,26}}</string>
+        <string>{{374,59},{23,26}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,0}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,26}}</string>
+        <string>{{6,2},{23,26}}</string>
         <key>sourceSize</key>
-        <string>{23,26}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{118,137},{26,21}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{26,21}}</string>
-        <key>sourceSize</key>
-        <string>{26,21}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/09-Dead Hit/Dead Hit 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{144,157},{26,20}}</string>
+        <string>{{374,86},{26,20}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{3,-2}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{26,20}}</string>
+        <string>{{7,7},{26,20}}</string>
         <key>sourceSize</key>
-        <string>{26,20}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/02-Run/Run 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{118,158},{25,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,22}}</string>
-        <key>sourceSize</key>
-        <string>{25,22}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{92,159},{22,25}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{22,25}}</string>
-        <key>sourceSize</key>
-        <string>{22,25}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{585,0},{25,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,22}}</string>
-        <key>sourceSize</key>
-        <string>{25,22}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/10-Dead Ground/Dead Ground 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{610,0},{25,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,22}}</string>
-        <key>sourceSize</key>
-        <string>{25,22}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/PinkStar/10-Dead Ground/Dead Ground 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{635,0},{25,21}}</string>
+        <string>{{322,87},{25,21}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{3.5,-4.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{25,21}}</string>
+        <string>{{8,9},{25,21}}</string>
         <key>sourceSize</key>
-        <string>{25,21}</string>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/03-Jump/Jump 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{257,193},{25,24}}</string>
+        <key>offset</key>
+        <string>{0.5,0}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{5,3},{25,24}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/10-Dead Ground/Dead Ground 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{169,254},{23,25}}</string>
+        <key>offset</key>
+        <string>{3.5,-2.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{9,5},{23,25}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/02-Run/Run 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{140,272},{25,22}}</string>
+        <key>offset</key>
+        <string>{0.5,1}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{5,3},{25,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{84,297},{22,25}}</string>
+        <key>offset</key>
+        <string>{1,-0.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{7,3},{22,25}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,308},{25,22}}</string>
+        <key>offset</key>
+        <string>{1.5,0}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{6,4},{25,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/10-Dead Ground/Dead Ground 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{28,308},{25,22}}</string>
+        <key>offset</key>
+        <string>{3.5,-4}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{8,8},{25,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/06-Anticipation/Anticipation 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{660,0},{25,20}}</string>
+        <string>{{54,301},{25,20}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1.5,-3}</string>
         <key>rotated</key>
-        <false/>
+        <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{25,20}}</string>
+        <string>{{6,8},{25,20}}</string>
         <key>sourceSize</key>
-        <string>{25,20}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/10-Dead Ground/Dead Ground 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{685,0},{25,18}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{25,18}}</string>
-        <key>sourceSize</key>
-        <string>{25,18}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/02-Run/Run 05.png</key>
       <dict>
         <key>frame</key>
-        <string>{{710,0},{24,23}}</string>
+        <string>{{54,330},{24,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-0.5}</string>
         <key>rotated</key>
-        <false/>
+        <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{24,23}}</string>
+        <string>{{6,4},{24,23}}</string>
         <key>sourceSize</key>
-        <string>{24,23}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/04-Fall/Fall 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{685,18},{24,23}}</string>
+        <string>{{2,337},{24,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,23}}</string>
-        <key>sourceSize</key>
-        <string>{24,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/07-Attack/Attack 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{660,20},{24,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,23}}</string>
-        <key>sourceSize</key>
-        <string>{24,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{635,21},{24,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,23}}</string>
-        <key>sourceSize</key>
-        <string>{24,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{585,23},{24,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,23}}</string>
-        <key>sourceSize</key>
-        <string>{24,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{609,23},{23,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,24}}</string>
+        <string>{{6,4},{24,23}}</string>
         <key>sourceSize</key>
-        <string>{23,24}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{545,29},{23,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{23,24}}</string>
-        <key>sourceSize</key>
-        <string>{23,24}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/06-Anticipation/Anticipation 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{504,44},{24,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,23}}</string>
-        <key>sourceSize</key>
-        <string>{24,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{466,48},{24,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,22}}</string>
-        <key>sourceSize</key>
-        <string>{24,22}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 08.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{426,69},{24,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,22}}</string>
-        <key>sourceSize</key>
-        <string>{24,22}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/05-Ground/Ground 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{397,75},{24,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,22}}</string>
-        <key>sourceSize</key>
-        <string>{24,22}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/09-Dead Hit/Dead Hit 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{397,97},{24,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,22}}</string>
-        <key>sourceSize</key>
-        <string>{24,22}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/09-Dead Hit/Dead Hit 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{358,89},{22,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{22,24}}</string>
-        <key>sourceSize</key>
-        <string>{22,24}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/09-Dead Hit/Dead Hit 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{358,111},{24,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,22}}</string>
-        <key>sourceSize</key>
-        <string>{24,22}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/06-Anticipation/Anticipation 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{358,133},{24,21}}</string>
+        <string>{{29,337},{24,21}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{24,21}}</string>
-        <key>sourceSize</key>
-        <string>{24,21}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/10-Dead Ground/Dead Ground 02.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{358,154},{21,24}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-2.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{21,24}}</string>
+        <string>{{6,7},{24,21}}</string>
         <key>sourceSize</key>
-        <string>{21,24}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 01.png</key>
+      <key>TheCrustyCrew/FierceTooth/07-Attack/Attack 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{358,175},{23,23}}</string>
+        <string>{{110,297},{24,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{23,23}}</string>
-        <key>sourceSize</key>
-        <string>{23,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{314,92},{23,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{23,22}}</string>
-        <key>sourceSize</key>
-        <string>{23,22}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{337,92},{23,21}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,21}}</string>
+        <string>{{6,4},{24,23}}</string>
         <key>sourceSize</key>
-        <string>{23,21}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 05.png</key>
+      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{280,98},{22,23}}</string>
+        <string>{{196,254},{24,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{22,23}}</string>
+        <string>{{6,4},{24,23}}</string>
         <key>sourceSize</key>
-        <string>{22,23}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 06.png</key>
+      <key>TheCrustyCrew/FierceTooth/08-Hit/Hit 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{253,119},{23,22}}</string>
+        <string>{{223,272},{24,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{2,-0.5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,22}}</string>
+        <string>{{7,4},{24,23}}</string>
         <key>sourceSize</key>
-        <string>{23,22}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/FierceTooth/02-Run/Run 02.png</key>
+      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{303,114},{22,23}}</string>
+        <string>{{166,283},{23,24}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{22,23}}</string>
-        <key>sourceSize</key>
-        <string>{22,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/02-Run/Run 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{276,120},{23,22}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1.5,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,22}}</string>
+        <string>{{7,3},{23,24}}</string>
         <key>sourceSize</key>
-        <string>{23,22}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/FierceTooth/02-Run/Run 06.png</key>
+      <key>TheCrustyCrew/FierceTooth/09-Dead Hit/Dead Hit 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{253,141},{23,22}}</string>
+        <string>{{166,311},{23,24}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1.5,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,22}}</string>
+        <string>{{7,3},{23,24}}</string>
         <key>sourceSize</key>
-        <string>{23,22}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/FierceTooth/06-Anticipation/Anticipation 01.png</key>
+      <key>TheCrustyCrew/PinkStar/06-Anticipation/Anticipation 03.png</key>
       <dict>
         <key>frame</key>
-        <string>{{225,146},{23,22}}</string>
+        <string>{{81,326},{24,23}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{23,22}}</string>
-        <key>sourceSize</key>
-        <string>{23,22}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 01.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{198,163},{22,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
+        <string>{4,-2.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{22,23}}</string>
+        <string>{{9,6},{24,23}}</string>
         <key>sourceSize</key>
-        <string>{22,23}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 02.png</key>
+      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 08.png</key>
       <dict>
         <key>frame</key>
-        <string>{{170,176},{22,23}}</string>
+        <string>{{108,326},{24,22}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-2}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{22,23}}</string>
+        <string>{{6,6},{24,22}}</string>
         <key>sourceSize</key>
-        <string>{22,23}</string>
+        <string>{34,30}</string>
       </dict>
-      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 03.png</key>
+      <key>TheCrustyCrew/FierceTooth/05-Ground/Ground 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{143,177},{22,23}}</string>
+        <string>{{134,325},{24,22}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-2}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{22,23}}</string>
+        <string>{{6,6},{24,22}}</string>
         <key>sourceSize</key>
-        <string>{22,23}</string>
-      </dict>
-      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 04.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{117,180},{22,23}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <true/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{22,23}}</string>
-        <key>sourceSize</key>
-        <string>{22,23}</string>
-      </dict>
-      <key>TheCrustyCrew/FierceTooth/10-Dead Ground/Dead Ground 03.png</key>
-      <dict>
-        <key>frame</key>
-        <string>{{92,181},{23,21}}</string>
-        <key>offset</key>
-        <string>{0,0}</string>
-        <key>rotated</key>
-        <false/>
-        <key>sourceColorRect</key>
-        <string>{{0,0},{23,21}}</string>
-        <key>sourceSize</key>
-        <string>{23,21}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/10-Dead Ground/Dead Ground 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{67,198},{23,20}}</string>
+        <string>{{137,301},{23,20}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1.5,-5}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,20}}</string>
+        <string>{{7,10},{23,20}}</string>
         <key>sourceSize</key>
-        <string>{23,20}</string>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/09-Dead Hit/Dead Hit 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{193,283},{24,22}}</string>
+        <key>offset</key>
+        <string>{3,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{8,6},{24,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/09-Dead Hit/Dead Hit 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{251,272},{22,24}}</string>
+        <key>offset</key>
+        <string>{3,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{9,5},{22,24}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/09-Dead Hit/Dead Hit 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{279,272},{24,22}}</string>
+        <key>offset</key>
+        <string>{3,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{8,6},{24,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/10-Dead Ground/Dead Ground 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{219,299},{21,24}}</string>
+        <key>offset</key>
+        <string>{1.5,-3}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{8,6},{21,24}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{219,327},{23,23}}</string>
+        <key>offset</key>
+        <string>{1.5,-1.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{7,5},{23,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{244,299},{23,22}}</string>
+        <key>offset</key>
+        <string>{0.5,-2}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{6,6},{23,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 05.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{134,353},{22,23}}</string>
+        <key>offset</key>
+        <string>{0,-1.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{6,5},{22,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 06.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,365},{23,22}}</string>
+        <key>offset</key>
+        <string>{0.5,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{6,6},{23,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/02-Run/Run 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{28,365},{22,23}}</string>
+        <key>offset</key>
+        <string>{2,-0.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{8,4},{22,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/02-Run/Run 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{54,358},{23,22}}</string>
+        <key>offset</key>
+        <string>{1.5,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{7,6},{23,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/02-Run/Run 06.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{80,358},{23,22}}</string>
+        <key>offset</key>
+        <string>{1.5,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{7,6},{23,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/06-Anticipation/Anticipation 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{106,354},{23,22}}</string>
+        <key>offset</key>
+        <string>{0.5,-2}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{6,6},{23,22}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 01.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{106,381},{22,23}}</string>
+        <key>offset</key>
+        <string>{1,-2.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{7,6},{22,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 02.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,392},{22,23}}</string>
+        <key>offset</key>
+        <string>{2,-2.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{8,6},{22,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{2,419},{22,23}}</string>
+        <key>offset</key>
+        <string>{1,-2.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{7,6},{22,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/PinkStar/07-Attack/Attack 04.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{28,392},{22,23}}</string>
+        <key>offset</key>
+        <string>{2,-2.5}</string>
+        <key>rotated</key>
+        <false/>
+        <key>sourceColorRect</key>
+        <string>{{8,6},{22,23}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{54,385},{23,21}}</string>
+        <key>offset</key>
+        <string>{0.5,-2.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{6,7},{23,21}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
+      </dict>
+      <key>TheCrustyCrew/FierceTooth/10-Dead Ground/Dead Ground 03.png</key>
+      <dict>
+        <key>frame</key>
+        <string>{{79,385},{23,21}}</string>
+        <key>offset</key>
+        <string>{1.5,-4.5}</string>
+        <key>rotated</key>
+        <true/>
+        <key>sourceColorRect</key>
+        <string>{{7,9},{23,21}}</string>
+        <key>sourceSize</key>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/02-Run/Run 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{326,115},{22,22}}</string>
+        <string>{{160,339},{22,22}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{2,1}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{22,22}}</string>
+        <string>{{8,3},{22,22}}</string>
         <key>sourceSize</key>
-        <string>{22,22}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Dead/Dead Out 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{42,93},{11,5}}</string>
+        <string>{{175,61},{11,5}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{11,5}}</string>
+        <string>{{1,3},{11,5}}</string>
         <key>sourceSize</key>
-        <string>{11,5}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Dead/Dead Out 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{52,96},{13,12}}</string>
+        <string>{{204,138},{13,12}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
         <string>{{0,0},{13,12}}</string>
         <key>sourceSize</key>
-        <string>{13,12}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Exclamation/Exclamation Out 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{298,44},{9,5}}</string>
+        <string>{{175,76},{9,5}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{9,5}}</string>
+        <string>{{2,3},{9,5}}</string>
         <key>sourceSize</key>
-        <string>{9,5}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Interrogation/Interrogation In 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{298,44},{9,5}}</string>
+        <string>{{175,76},{9,5}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{9,5}}</string>
+        <string>{{2,3},{9,5}}</string>
         <key>sourceSize</key>
-        <string>{9,5}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Interrogation/Interrogation Out 02.png</key>
       <dict>
         <key>frame</key>
-        <string>{{298,44},{9,5}}</string>
+        <string>{{175,76},{9,5}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{9,5}}</string>
+        <string>{{2,3},{9,5}}</string>
         <key>sourceSize</key>
-        <string>{9,5}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Exclamation/Exclamation Out 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{41,124},{11,12}}</string>
+        <string>{{221,138},{11,12}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0}</string>
         <key>rotated</key>
-        <false/>
+        <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{11,12}}</string>
+        <string>{{1,0},{11,12}}</string>
         <key>sourceSize</key>
-        <string>{11,12}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/Dialogue/Interrogation/Interrogation Out 01.png</key>
       <dict>
         <key>frame</key>
-        <string>{{41,136},{11,12}}</string>
+        <string>{{261,49},{11,12}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{-0.5,0}</string>
         <key>rotated</key>
         <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{11,12}}</string>
+        <string>{{1,0},{11,12}}</string>
         <key>sourceSize</key>
-        <string>{11,12}</string>
+        <string>{14,12}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/01-Idle/Idle 07.png</key>
       <dict>
         <key>frame</key>
-        <string>{{337,92},{23,21}}</string>
+        <string>{{54,385},{23,21}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{0.5,-2.5}</string>
         <key>rotated</key>
         <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{23,21}}</string>
+        <string>{{6,7},{23,21}}</string>
         <key>sourceSize</key>
-        <string>{23,21}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/07-Attack/Attack 04.png</key>
       <dict>
         <key>frame</key>
-        <string>{{206,87},{26,20}}</string>
+        <string>{{252,25},{26,20}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-3}</string>
         <key>rotated</key>
-        <true/>
+        <false/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{26,20}}</string>
+        <string>{{5,8},{26,20}}</string>
         <key>sourceSize</key>
-        <string>{26,20}</string>
+        <string>{34,30}</string>
       </dict>
       <key>TheCrustyCrew/FierceTooth/07-Attack/Attack 05.png</key>
       <dict>
         <key>frame</key>
-        <string>{{397,75},{24,22}}</string>
+        <string>{{134,325},{24,22}}</string>
         <key>offset</key>
-        <string>{0,0}</string>
+        <string>{1,-2}</string>
         <key>rotated</key>
-        <false/>
+        <true/>
         <key>sourceColorRect</key>
-        <string>{{0,0},{24,22}}</string>
+        <string>{{6,6},{24,22}}</string>
         <key>sourceSize</key>
-        <string>{24,22}</string>
+        <string>{34,30}</string>
       </dict>
     </dict>
     <key>metadata</key>
@@ -2096,7 +2096,7 @@
       <key>realTextureFileName</key>
       <string>enemy.png</string>
       <key>size</key>
-      <string>{734,223}</string>
+      <string>{408,444}</string>
       <key>textureFileName</key>
       <string>enemy</string>
     </dict>

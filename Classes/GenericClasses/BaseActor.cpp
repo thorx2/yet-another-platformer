@@ -11,85 +11,66 @@ USING_NS_CC;
 
 namespace PlatformerGame {
 
-    const float kPixelsPerMeter = 32.0f;
-    const float kGravity = -kPixelsPerMeter / 0.7f;
-
-    const std::string IDLE_PREFIX = "01-Idle";
-    const int IDLE_FRAMES = 8;
-
-    const std::string RUN_PREFIX = "02-Run";
-    const int RUN_FRAMES = 8;
-
-    const std::string JUMP_PREFIX = "03-Jump";
-    const int JUMP_FRAMES = 8;
-
-    const std::string FALL_PREFIX = "04-Fall";
-    const int FALL_FRAMES = 8;
-
-    const std::string GROUND_PREFIX = "05-Ground";
-    const int GROUND_FRAMES = 8;
-
-    const std::string HIT_PREFIX = "08-Hit";
-    const int HIT_FRAMES = 8;
-
-    const std::string ATTACK_PREFIX = "07-Attack";
-    const int ATTACK_FRAMES = 8;
-
-    const std::string DIE_PREFIX = "01-Idle";
-    const int DIE_FRAMES = 8;
-
     BaseActor::BaseActor(std::string characterName, b2World* world, cocos2d::Vec2 pos) {
-        auto spritecache = SpriteFrameCache::getInstance();
 
-        spritecache->addSpriteFramesWithFile("tpassets/enemy/enemy.plist",
-                                             "tpassets/enemy/enemy.png");
+        auto spriteCache = SpriteFrameCache::getInstance();
 
-        std::string defaultImage = "TheCrustyCrew/" + characterName + "/" + IDLE_PREFIX + "/" + "Idle 01.png";
+        for(auto animData : DefaultPlayerAnimationData) {
+            Animation* anim = new Animation();
+            Vector<SpriteFrame*> frames;
 
-        auto defaultFrame = spritecache->getSpriteFrameByName(defaultImage);
+            for (int i = 1; i <= animData.second.begin()->second; i++) {
 
-        m_body = Sprite::createWithSpriteFrame(defaultFrame);
+                std::string animFamily = animData.second.begin()->first;
+
+                animFamily = animFamily.substr(animFamily.find("-") + 1, animFamily.length());
+
+                std::string frameName = "TheCrustyCrew/";
+                frameName.append(characterName); // TheCrustyCrew/Crabby
+                frameName.append("/"); // TheCrustyCrew/Crabby/
+                frameName.append(animData.second.begin()->first); // TheCrustyCrew/Crabby/<Data?>
+                frameName.append("/"); // TheCrustyCrew/Crabby/<Data?>/
+                frameName.append(animFamily);
+                frameName.append(" 0");
+                frameName.append(std::to_string(i));
+                frameName.append(".png");
+
+                frames.pushBack(spriteCache->getSpriteFrameByName(frameName));
+
+                if (m_body == nullptr) {
+                    m_body = extension::PhysicsSprite::createWithSpriteFrameName(frameName.c_str());
+                }
+            }
+
+            std::reverse(frames.begin(), frames.end());
+
+            anim->initWithSpriteFrames(frames, 0.1f);
+
+            if (animData.second.begin()->first.find("Idle") != std::string::npos ||
+                animData.second.begin()->first.find("Run") != std::string::npos) {
+                anim->setLoops(-1);
+            }
+
+            m_stateAniamtionList.insert({static_cast<ActorState>(animData.first), anim});
+        }
 
         m_actorState = eIdle;
 
         m_previousState = eIdle;
 
-        schedule(CC_SCHEDULE_SELECTOR(BaseActor::update), 0.03f);
-
-        for (int i = 0; i < 5; i++) {
-            Animation* anim = new Animation;
-            Vector<SpriteFrame*> frames;
-
-            for (int j = 1; j <= IDLE_FRAMES; j++) {
-                std::string frameName = "TheCrustyCrew/";
-                frameName.append(characterName);
-                frameName.append("/");
-                frameName.append(IDLE_PREFIX);
-                frameName.append("/");
-                frameName.append("Idle 0");
-                frameName.append(std::to_string(j));
-                frameName.append(".png");
-
-                frames.pushBack(spritecache->getSpriteFrameByName(frameName));
-            }
-            std::reverse(frames.begin(), frames.end());
-
-            anim->initWithSpriteFrames(frames, 0.1f);
-
-            anim->setLoops(-1);
-
-            m_stateAniamtionList.push_back(anim);
-        }
-
-        std::reverse(m_stateAniamtionList.begin(), m_stateAniamtionList.end());
+        m_body->setPTMRatio(32);
 
         addBodyToWorld(world, pos);
 
-        addRectangularFixtureToBody(1,1);
+        m_body->runAction(Animate::create(m_stateAniamtionList[eIdle]));
 
-        m_body->runAction(Animate::create(m_stateAniamtionList.front()));
+        addRectangularFixtureToBody();
+
+        m_body->setB2Body(m_physicsBody);
 
         setPosition(pos);
+
+        scheduleUpdate();
 
         addChild(m_body);
     }
@@ -110,9 +91,32 @@ namespace PlatformerGame {
         for (int i = eDefaultState; i < eMaxState; i++) {
             if (i == m_actorState && m_actorState != m_previousState) {
 
+                m_previousState = m_actorState;
+
+                m_body->stopAllActions();
+
+                switch (m_actorState) {
+                    case eIdle:
+                    case eGetHit:
+                    case eMoving:
+                        m_body->runAction(Animate::create(m_stateAniamtionList[m_actorState]));
+                        break;
+                    case eJumpStart:
+                        m_physicsBody->ApplyLinearImpulseToCenter(b2Vec2(0, 100), true);
+                        m_actorState = eJumpMid;
+                        break;
+                    case eJumpMid:
+                        break;
+                    case eJumpEnd:
+                        break;
+                    case eAttack:
+                        m_body->runAction(Animate::create(m_stateAniamtionList[m_actorState]));
+                        break;
+                    case eDie:
+                        break;
+                }
             }
         }
-
         m_body->update(dt);
     }
 
@@ -123,40 +127,28 @@ namespace PlatformerGame {
     void BaseActor::addBodyToWorld(b2World* world, Vec2 pos) {
         b2BodyDef bodyDef;
         bodyDef.type = b2_dynamicBody;
-        bodyDef.position.Set(pos.x,pos.y);
-        bodyDef.userData = m_body;
         bodyDef.fixedRotation = true;
+        bodyDef.position.Set(pos.x / 32,pos.y / 32);
         m_physicsBody = world->CreateBody(&bodyDef);
     }
 
-    void BaseActor::addCircularFixtureToBody(float radius) {
-        b2CircleShape shape;
-        shape.m_radius = radius * this->getScale();
-        this->createFixture(&shape);
-    }
-
-    void BaseActor::addRectangularFixtureToBody(float width, float height) {
+    void BaseActor::addRectangularFixtureToBody() {
         b2PolygonShape shape;
-        shape.SetAsBox(
-                width * this->getScale(),
-                height * this->getScale()
-        );
-        this->createFixture(&shape);
-    }
-
-    void BaseActor::createFixture(b2Shape* shape) {
+        shape.SetAsBox(0.5f,0.5f);
         b2FixtureDef fixtureDef;
-        fixtureDef.shape = shape;
+        fixtureDef.shape = &shape;
         fixtureDef.density = 1.0f;
         fixtureDef.friction = 0.7f;
-        fixtureDef.restitution = 0.1f;
-        fixtureDef.filter.categoryBits = kFilterCategorySolidObject;
-        fixtureDef.filter.maskBits = 0xffff;
-        this->m_physicsBody->CreateFixture(&fixtureDef);
+        m_physicsBody->CreateFixture(&fixtureDef);
     }
+
 
     void BaseActor::setPosition(const Vec2 &position) {
         Node::setPosition(position);
-        m_body->setPosition(0, 0);
+        m_body->setPosition(getPosition().x, getPosition().y);
+    }
+
+    cocos2d::Sprite *BaseActor::GetBodySprite() {
+        return m_body;
     }
 }

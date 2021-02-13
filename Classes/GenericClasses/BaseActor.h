@@ -6,9 +6,11 @@
 #define PROJ_ANDROID_BASEACTOR_H
 
 #include <string>
+#include <map>
 #include <Box2D/Box2D.h>
 #include <cocos/2d/CCSprite.h>
 #include <cocos/2d/CCAnimation.h>
+#include "extensions/cocos-ext.h"
 
 namespace PlatformerGame {
     enum ActorState {
@@ -18,8 +20,9 @@ namespace PlatformerGame {
         eJumpStart,
         eJumpMid,
         eJumpEnd,
-        eGetHit,
+        ePreAttack,
         eAttack,
+        eGetHit,
         eDie,
         eMaxState
     };
@@ -34,12 +37,28 @@ namespace PlatformerGame {
 
         virtual ~BaseActor();
 
-        virtual void setPosition(const cocos2d::Vec2 &position);
+        cocos2d::Sprite* GetBodySprite();
+
+        void setPosition(const cocos2d::Vec2 &position);
 
     protected:
         BaseActor(std::string characterName, b2World* world, cocos2d::Vec2 pos);
 
     private:
+
+        const std::map<int, std::map<std::string, int>> DefaultPlayerAnimationData = {
+                {eIdle, {{"01-Idle", 9}}},
+                {eMoving, {{"02-Run", 6}}},
+                {eJumpStart, {{"03-Jump", 3}}},
+                {eJumpMid, {{"04-Fall", 1}}},
+                {eJumpEnd, {{"05-Ground", 2}}},
+                {ePreAttack, {{"06-Anticipation", 3}}},
+                {eAttack, {{"07-Attack", 4}}},
+                {eGetHit, {{"08-Hit", 4}}},
+        };
+
+        const float kPixelsPerMeter = 32.0f;
+        const float kGravity = -kPixelsPerMeter / 0.7f;
 
         enum
         {
@@ -50,7 +69,7 @@ namespace PlatformerGame {
 
         b2Body* m_physicsBody;
 
-        cocos2d::Sprite* m_body;
+        cocos2d::extension::PhysicsSprite* m_body = nullptr;
 
         cocos2d::Sprite* m_weponSprite;
 
@@ -60,15 +79,11 @@ namespace PlatformerGame {
 
         ActorState m_previousState;
 
-        std::vector<cocos2d::Animation*> m_stateAniamtionList;
+        std::map<ActorState, cocos2d::Animation*> m_stateAniamtionList;
 
         void update(float dt);
 
-        void createFixture(b2Shape* shape);
-
-        void addRectangularFixtureToBody(float width, float height);
-
-        void addCircularFixtureToBody(float radius);
+        void addRectangularFixtureToBody();
 
         void addBodyToWorld(b2World* world, cocos2d::Vec2 pos);
     };

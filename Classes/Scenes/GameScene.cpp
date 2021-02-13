@@ -2,14 +2,11 @@
 // Created by gaudh on 2/5/2021.
 //
 
-//#include <external/Box2D/include/Box2D/Dynamics/b2Body.h>
-//#include <external/Box2D/include/Box2D/Collision/Shapes/b2PolygonShape.h>
-//#include <external/Box2D/include/Box2D/Dynamics/b2Fixture.h>
-
 #include <cocos/2d/CCNode.h>
 #include <GenericClasses/EnemyPlayer.h>
-#include <UIComponents/OnScreenController.h>
 #include <B2DebugDraw/B2DebugDrawLayer.h>
+#include <Manager/GameManager.h>
+#include <AudioEngine.h>
 #include "GameScene.h"
 
 USING_NS_CC;
@@ -37,31 +34,32 @@ namespace PlatformerGame {
             return false;
         }
 
+        auto spriteCache = SpriteFrameCache::getInstance();
+
+        spriteCache->addSpriteFramesWithFile("tpassets/enemy/enemy.plist",
+                                             "tpassets/enemy/enemy.png");
+        spriteCache->addSpriteFramesWithFile("tpassets/uiandcontrolls/controlls.plist",
+                                             "tpassets/uiandcontrolls/controlls.png");
+
         loadGameLevel("levels/LevelOne.tmx");
 
         auto worldLayer = m_tileMap->getLayer("World");
 
-        auto layer = OnScreenController::create();
+        m_onScreenController = OnScreenController::create();
 
-        this->addChild(layer, 3);
+        this->addChild(m_onScreenController, 3);
 
-        this->addChild(m_tileMap, -1);
-
-        this->addChild(B2DebugDrawLayer::create(m_world, 1), 9999);
+        this->addChild(m_tileMap, 0);
 
         scheduleUpdate();
 
-        return true;
-    }
+        auto debugLayer = B2DebugDrawLayer::create(m_world, 32);
+        debugLayer->setGlobalZOrder(99);
+        this->addChild(debugLayer);
 
-    void GameScene::draw(Renderer renderer, const Mat4 &transform, uint32_t flags)
-    {
-        GL::enableVertexAttribs( GL::VERTEX_ATTRIB_FLAG_POSITION );
-        Director* director = Director::getInstance();
-        CCASSERT(nullptr != director, "Director is null when seting matrix stack");
-        director->pushMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
-        m_world->DrawDebugData();
-        director->popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
+        cocos2d::experimental::AudioEngine::play2d("Music/InGameBGM.mp3", true, 0.7f);
+
+        return true;
     }
 
     void GameScene::setViewPointCenter(CCPoint position) {
@@ -76,6 +74,11 @@ namespace PlatformerGame {
 
         CCPoint centerOfView = ccp(winSize.width/2, winSize.height/2);
         CCPoint viewPoint = ccpSub(centerOfView, actualPosition);
+
+        if (m_onScreenController != nullptr) {
+            m_onScreenController->setPosition(viewPoint);
+        }
+
         this->setPosition(viewPoint);
     }
 
@@ -92,8 +95,11 @@ namespace PlatformerGame {
 
     void GameScene::prepareLayers() {
         for (auto& object : this->m_tileMap->getChildren()) {
+
             auto layer = dynamic_cast<TMXLayer*>(object);
+
             if (layer != nullptr) {
+
                 if (layer->getLayerName().compare("BGFake") != 0) {
                     this->createFixtures(layer);
                 }
@@ -103,13 +109,14 @@ namespace PlatformerGame {
 
     void GameScene::createFixtures(TMXLayer* layer) {
         Size layerSize = layer->getLayerSize();
-        for (int y = 0; y < layerSize.height; y++)
-        {
-            for (int x = 0; x < layerSize.width; x++)
-            {
+
+        for (int y = 0; y < layerSize.height; y++) {
+            for (int x = 0; x < layerSize.width; x++) {
+
                 auto tileSprite = layer->getTileAt(Point(x, y));
+
                 if (tileSprite) {
-                    this->createRectangularFixture(layer, x, y, 32, 32);
+                    this->createRectangularFixture(layer, x, y, 1, 1);
                 }
             }
         }
@@ -144,6 +151,40 @@ namespace PlatformerGame {
         fixtureDef.filter.maskBits = 0xffff;
         body->CreateFixture(&fixtureDef);
     }
+    void GameScene::draw(Renderer *renderer, const Mat4 &transform, uint32_t flags)
+    {
+        //
+        // IMPORTANT:
+        // This is only for debug purposes
+        // It is recommend to disable it
+        //
+        Scene::draw(renderer, transform, flags);
+
+        GL::enableVertexAttribs( cocos2d::GL::VERTEX_ATTRIB_FLAG_POSITION );
+        Director* director = Director::getInstance();
+        CCASSERT(nullptr != director, "Director is null when setting matrix stack");
+        director->pushMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
+
+        _modelViewMV = director->getMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
+
+        _customCommand.init(_globalZOrder);
+        _customCommand.func = CC_CALLBACK_0(GameScene::onDraw, this);
+        renderer->addCommand(&_customCommand);
+
+        director->popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
+    }
+
+    void GameScene::onDraw()
+    {
+        Director* director = Director::getInstance();
+        CCASSERT(nullptr != director, "Director is null when setting matrix stack");
+
+        auto oldMV = director->getMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
+        director->loadMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW, _modelViewMV);
+        m_world->DrawDebugData();
+        director->loadMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW, oldMV);
+    }
+
 
     void GameScene::createPhysicalWorld() {
         m_world = new b2World(b2Vec2(1.0f, kGravity));
@@ -168,18 +209,22 @@ namespace PlatformerGame {
                 auto type = properties.at("type");
 
                 if (!type.isNull()) {
-                    addChild(addObject(type.asString().c_str(), properties), 0);
-                    m_objectCount++;
+                    BaseActor* actor = addObject(type.asString().c_str(), properties);
+                    if (actor != nullptr) {
+                        addChild(actor, 0);
+                        actor->setPosition(ccp(properties.at("x").asFloat(), properties.at("y").asFloat()));
+                        m_objectCount++;
+                    }
                 }
             }
         }
     }
 
     BaseActor* GameScene::addObject(std::string className, ValueMap& properties) {
-
         BaseActor* o = nullptr;
         if(className == "Player") {
             o = EnemyPlayer::CreateEnemyOfType(EnemyPlayer::EnemyType::eCRABBY, m_world, Vec2(properties["x"].asFloat(), properties["y"].asFloat()));
+            GameManager::GetInstance()->SetPlayerActor(o);
             setViewPointCenter(o->getPosition());
         }
         else if(className == "Monster") {
@@ -204,17 +249,10 @@ namespace PlatformerGame {
 
         accumulator += frameTime;
 
-        m_world->Step(delta, 1, 1);
+        m_world->Step(delta, 8, 1);
 
-        while (accumulator > kSecondsPerUpdate) {
-            accumulator -= kSecondsPerUpdate;
-            for (b2Body *body = m_world->GetBodyList(); body != NULL; body = body->GetNext()) {
-                if (body->GetUserData()) {
-                    BaseActor *sprite = (BaseActor*) body->GetUserData();
-                    sprite->setPosition(ccp(body->GetPosition().x, body->GetPosition().y));
-                    sprite->setRotation(-1 * CC_RADIANS_TO_DEGREES(body->GetAngle()));
-                }
-            }
+        if (GameManager::GetInstance()->GetPCActor() != nullptr) {
+            setViewPointCenter(GameManager::GetInstance()->GetPCActor()->getPosition());
         }
 
         lastTickTime = currentTime;

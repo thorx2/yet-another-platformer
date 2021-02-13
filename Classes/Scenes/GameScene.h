@@ -7,6 +7,7 @@
 
 #include "cocos2d.h"
 #include <Box2D/Box2D.h>
+#include <UIComponents/OnScreenController.h>
 #include <cocos/base/CCValue.h>
 #include <GenericClasses/BaseActor.h>
 
@@ -17,10 +18,18 @@ namespace PlatformerGame {
 
         virtual bool init();
 
-        virtual void draw(cocos2d::Renderer renderer, const cocos2d::Mat4 &transform, uint32_t flags);
-
         CREATE_FUNC(GameScene);
+
+        virtual void draw(cocos2d::Renderer* renderer, const cocos2d::Mat4& transform, uint32_t flags) override;
+
     private:
+
+        OnScreenController* m_onScreenController;
+
+        cocos2d::CustomCommand _customCommand;
+        cocos2d::Mat4 _modelViewMV;
+
+        void onDraw();
 
         int m_objectCount = 0;
 

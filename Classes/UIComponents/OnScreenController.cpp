@@ -27,18 +27,17 @@ namespace PlatformerGame {
 
         Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-        spriteCache->addSpriteFramesWithFile("tpassets/uiandcontrolls/controlls.plist",
-                                             "tpassets/uiandcontrolls/controlls.png");
-
         //TODO Make this assignment better
         leftButton = ui::Button::create("MobileButtons/Buttons/3.png", "", "", cocos2d::ui::Button::TextureResType::PLIST);
         leftButton->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType touchType){
             switch (touchType) {
                 case ui::Widget::TouchEventType::BEGAN:
+                    GameManager::GetInstance()->OnInteractionReceived(UIButtonType::eLeftMove);
                     leftButton->setOpacity(200);
                     break;
                 case ui::Widget::TouchEventType::CANCELED:
                 case ui::Widget::TouchEventType::ENDED:
+                    GameManager::GetInstance()->OnInteractionStopped(UIButtonType::eLeftMove);
                     leftButton->setOpacity(255);
                     break;
                 case ui::Widget::TouchEventType::MOVED:
@@ -49,11 +48,13 @@ namespace PlatformerGame {
         rightButton->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType touchType){
             switch (touchType) {
                 case ui::Widget::TouchEventType::BEGAN:
+                    GameManager::GetInstance()->OnInteractionReceived(UIButtonType::eRightMove);
                     rightButton->setOpacity(200);
                     break;
                 case ui::Widget::TouchEventType::CANCELED:
                 case ui::Widget::TouchEventType::ENDED:
                     rightButton->setOpacity(255);
+                    GameManager::GetInstance()->OnInteractionStopped(UIButtonType::eRightMove);
                     break;
                 case ui::Widget::TouchEventType::MOVED:
                     break;
@@ -78,6 +79,7 @@ namespace PlatformerGame {
             switch (touchType) {
                 case ui::Widget::TouchEventType::BEGAN:
                     closeButton->setOpacity(200);
+                    Director::getInstance()->end();
                     break;
                 case ui::Widget::TouchEventType::CANCELED:
                 case ui::Widget::TouchEventType::ENDED:
@@ -92,6 +94,7 @@ namespace PlatformerGame {
             switch (touchType) {
                 case ui::Widget::TouchEventType::BEGAN:
                     jumpButton->setOpacity(200);
+                    GameManager::GetInstance()->OnInteractionReceived(UIButtonType::eJumpMove);
                     break;
                 case ui::Widget::TouchEventType::CANCELED:
                 case ui::Widget::TouchEventType::ENDED:

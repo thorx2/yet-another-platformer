@@ -15,6 +15,13 @@ namespace PlatformerGame {
         virtual bool init();
 
         CREATE_FUNC(MainScene);
+    private:
+        cocos2d::ParallaxNode* m_parallaxNode = nullptr;
+
+        void newGameStartFunction(Ref *pSender);
+        void quitGameButton(Ref *pSender);
+
+        void onTouchesMoved(const std::vector<cocos2d::Touch*>& touches, cocos2d::Event  *event);
     };
 }
 
