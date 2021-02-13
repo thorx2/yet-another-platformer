@@ -7,6 +7,7 @@
 #include <B2DebugDraw/B2DebugDrawLayer.h>
 #include <Manager/GameManager.h>
 #include <AudioEngine.h>
+#include <GenericClasses/PCActor.h>
 #include "GameScene.h"
 
 USING_NS_CC;
@@ -41,13 +42,13 @@ namespace PlatformerGame {
         spriteCache->addSpriteFramesWithFile("tpassets/uiandcontrolls/controlls.plist",
                                              "tpassets/uiandcontrolls/controlls.png");
 
+        m_onScreenController = OnScreenController::create();
+
+        addChild(m_onScreenController,5);
+
         loadGameLevel("levels/LevelOne.tmx");
 
         auto worldLayer = m_tileMap->getLayer("World");
-
-        m_onScreenController = OnScreenController::create();
-
-        this->addChild(m_onScreenController, 3);
 
         this->addChild(m_tileMap, 0);
 
@@ -57,7 +58,7 @@ namespace PlatformerGame {
         debugLayer->setGlobalZOrder(99);
         this->addChild(debugLayer);
 
-        cocos2d::experimental::AudioEngine::play2d("Music/InGameBGM.mp3", true, 0.7f);
+//        cocos2d::experimental::AudioEngine::play2d("Music/InGameBGM.mp3", true, 0.7f);
 
         return true;
     }
@@ -75,11 +76,9 @@ namespace PlatformerGame {
         CCPoint centerOfView = ccp(winSize.width/2, winSize.height/2);
         CCPoint viewPoint = ccpSub(centerOfView, actualPosition);
 
-        if (m_onScreenController != nullptr) {
-            m_onScreenController->setPosition(viewPoint);
-        }
-
         this->setPosition(viewPoint);
+
+        m_onScreenController->setPosition(-1 * viewPoint);
     }
 
     void GameScene::loadGameLevel(std::string level) {
@@ -223,7 +222,7 @@ namespace PlatformerGame {
     BaseActor* GameScene::addObject(std::string className, ValueMap& properties) {
         BaseActor* o = nullptr;
         if(className == "Player") {
-            o = EnemyPlayer::CreateEnemyOfType(EnemyPlayer::EnemyType::eCRABBY, m_world, Vec2(properties["x"].asFloat(), properties["y"].asFloat()));
+            o = PCActor::CreatePOActor(m_world, Vec2(properties["x"].asFloat(), properties["y"].asFloat()));
             GameManager::GetInstance()->SetPlayerActor(o);
             setViewPointCenter(o->getPosition());
         }

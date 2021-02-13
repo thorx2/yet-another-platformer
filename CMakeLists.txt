@@ -58,6 +58,7 @@ list(APPEND GAME_SOURCE
         Classes/UIComponents/OnScreenController.cpp
         Classes/B2DebugDraw/B2DebugDrawLayer.cpp
         Classes/B2DebugDraw/GLES-Render.cpp
+        Classes/GenericClasses/PCActor.cpp
      )
 list(APPEND GAME_HEADER
         Classes/AppDelegate.h
@@ -70,6 +71,7 @@ list(APPEND GAME_HEADER
         Classes/UIComponents/OnScreenController.h
         Classes/B2DebugDraw/B2DebugDrawLayer.h
         Classes/B2DebugDraw/GLES-Render.h
+        Classes/GenericClasses/PCActor.h
      )
 
 if(ANDROID)

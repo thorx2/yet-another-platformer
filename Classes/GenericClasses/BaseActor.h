@@ -27,7 +27,7 @@ namespace PlatformerGame {
         eMaxState
     };
 
-    class BaseActor : public cocos2d::Node {
+    class BaseActor : public cocos2d::extension::PhysicsSprite {
     public:
         void ChangeWepon(std::string stringWeponClass);
 
@@ -37,14 +37,13 @@ namespace PlatformerGame {
 
         virtual ~BaseActor();
 
-        cocos2d::Sprite* GetBodySprite();
-
-        void setPosition(const cocos2d::Vec2 &position);
-
     protected:
         BaseActor(std::string characterName, b2World* world, cocos2d::Vec2 pos);
 
+        virtual void update(float dt);
+
     private:
+        bool m_tempFrameAssigned = false;
 
         const std::map<int, std::map<std::string, int>> DefaultPlayerAnimationData = {
                 {eIdle, {{"01-Idle", 9}}},
@@ -69,8 +68,6 @@ namespace PlatformerGame {
 
         b2Body* m_physicsBody;
 
-        cocos2d::extension::PhysicsSprite* m_body = nullptr;
-
         cocos2d::Sprite* m_weponSprite;
 
         cocos2d::Sprite* m_effectSprite;
@@ -80,8 +77,6 @@ namespace PlatformerGame {
         ActorState m_previousState;
 
         std::map<ActorState, cocos2d::Animation*> m_stateAniamtionList;
-
-        void update(float dt);
 
         void addRectangularFixtureToBody();
 

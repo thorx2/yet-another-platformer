@@ -23,11 +23,11 @@ namespace PlatformerGame {
     void GameManager::OnInteractionReceived(UIButtonType buttonHit) {
         switch (buttonHit) {
             case eLeftMove:
-                m_player->GetBodySprite()->setFlippedX(false);
+                m_player->setFlippedX(false);
                 m_player->SetActorState(ActorState::eMoving);
                 break;
             case eRightMove:
-                m_player->GetBodySprite()->setFlippedX(true);
+                m_player->setFlippedX(true);
                 m_player->SetActorState(ActorState::eMoving);
                 break;
             case eAttackMove:

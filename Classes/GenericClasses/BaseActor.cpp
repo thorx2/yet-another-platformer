@@ -37,8 +37,9 @@ namespace PlatformerGame {
 
                 frames.pushBack(spriteCache->getSpriteFrameByName(frameName));
 
-                if (m_body == nullptr) {
-                    m_body = extension::PhysicsSprite::createWithSpriteFrameName(frameName.c_str());
+                if (!m_tempFrameAssigned) {
+                    m_tempFrameAssigned = true;
+                    setSpriteFrame(frameName.c_str());
                 }
             }
 
@@ -58,21 +59,19 @@ namespace PlatformerGame {
 
         m_previousState = eIdle;
 
-        m_body->setPTMRatio(32);
+        setPTMRatio(32);
 
         addBodyToWorld(world, pos);
 
-        m_body->runAction(Animate::create(m_stateAniamtionList[eIdle]));
+        this->runAction(Animate::create(m_stateAniamtionList[eIdle]));
 
         addRectangularFixtureToBody();
 
-        m_body->setB2Body(m_physicsBody);
+        setB2Body(m_physicsBody);
 
-        setPosition(pos);
+        this->setPosition(pos);
 
         scheduleUpdate();
-
-        addChild(m_body);
     }
 
     void BaseActor::ChangeWepon(std::string stringWeponClass) {
@@ -88,21 +87,24 @@ namespace PlatformerGame {
     }
 
     void BaseActor::update(float dt) {
+        PhysicsSprite::update(dt);
+
         for (int i = eDefaultState; i < eMaxState; i++) {
             if (i == m_actorState && m_actorState != m_previousState) {
 
                 m_previousState = m_actorState;
 
-                m_body->stopAllActions();
+                stopAllActions();
 
                 switch (m_actorState) {
                     case eIdle:
                     case eGetHit:
                     case eMoving:
-                        m_body->runAction(Animate::create(m_stateAniamtionList[m_actorState]));
+                        this->runAction(Animate::create(m_stateAniamtionList[m_actorState]));
+                        m_physicsBody->ApplyForceToCenter(b2Vec2(isFlippedX() ? 50 : -50, 0), true);
                         break;
                     case eJumpStart:
-                        m_physicsBody->ApplyLinearImpulseToCenter(b2Vec2(0, 100), true);
+                        m_physicsBody->ApplyLinearImpulseToCenter(b2Vec2(0, 120), true);
                         m_actorState = eJumpMid;
                         break;
                     case eJumpMid:
@@ -110,14 +112,13 @@ namespace PlatformerGame {
                     case eJumpEnd:
                         break;
                     case eAttack:
-                        m_body->runAction(Animate::create(m_stateAniamtionList[m_actorState]));
+                        this->runAction(Animate::create(m_stateAniamtionList[m_actorState]));
                         break;
                     case eDie:
                         break;
                 }
             }
         }
-        m_body->update(dt);
     }
 
     BaseActor::~BaseActor() {
@@ -134,21 +135,11 @@ namespace PlatformerGame {
 
     void BaseActor::addRectangularFixtureToBody() {
         b2PolygonShape shape;
-        shape.SetAsBox(0.5f,0.5f);
+        shape.SetAsBox(0.5f, 0.5f);
         b2FixtureDef fixtureDef;
         fixtureDef.shape = &shape;
         fixtureDef.density = 1.0f;
         fixtureDef.friction = 0.7f;
         m_physicsBody->CreateFixture(&fixtureDef);
-    }
-
-
-    void BaseActor::setPosition(const Vec2 &position) {
-        Node::setPosition(position);
-        m_body->setPosition(getPosition().x, getPosition().y);
-    }
-
-    cocos2d::Sprite *BaseActor::GetBodySprite() {
-        return m_body;
     }
 }

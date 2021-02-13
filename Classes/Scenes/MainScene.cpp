@@ -102,10 +102,7 @@ namespace PlatformerGame {
         auto listener = EventListenerTouchAllAtOnce::create();
         listener->onTouchesMoved = CC_CALLBACK_2(MainScene::onTouchesMoved, this);
         _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
-        _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
-        cocos2d::experimental::AudioEngine::play2d("Music/MainMenuBGM.mp3", true, 0.7f);
+//        cocos2d::experimental::AudioEngine::play2d("Music/MainMenuBGM.mp3", true, 0.7f);
 
         return true;
     }

@@ -25,4 +25,8 @@ namespace PlatformerGame {
     EnemyPlayer::EnemyPlayer(std::string enemyName, b2World* world, cocos2d::Vec2 pos) : BaseActor(enemyName, world, pos) {
 
     }
+
+    void EnemyPlayer::update(float dt) {
+        BaseActor::update(dt);
+    }
 }
